@@ -27,6 +27,7 @@
   display: grid;
   place-items: center;
   position: relative;
+  font-family: "Exo", sans-serif;
 }
 .hero-nav {
   position: absolute;
@@ -37,6 +38,7 @@
   justify-content: space-between;
   width: 90%;
   z-index: 10;
+  font-family: "Exo";
 }
 .hero-nav-logo {
   margin-left: 2em;
@@ -123,9 +125,11 @@
   z-index: 5;
   max-width: 20em;
   text-shadow: var(--quote-shadow);
+  font-family: "Ubuntu", sans-serif;
 }
 .quote-card > p {
   text-shadow: var(--quote-shadow);
+  font-family: "Exo", sans-serif;
 }
 
 @media screen and (max-width: 700px) {

@@ -35,10 +35,13 @@
 }
 .about-section-1-content > h1 {
   font-size: 4rem;
+  font-family: "Montserrat";
 }
 .about-section-1-content > p {
   max-width: 20em;
   font-size: 1.6rem;
+  font-family: "Exo";
+  line-height: 2.2rem;
 }
 .about-section-2-content {
   margin-left: auto;
@@ -46,15 +49,18 @@
 }
 .about-section-2-content > h1 {
   font-size: 4rem;
+  font-family: "Montserrat";
 }
 .about-section-2-content > p {
   max-width: 20em;
   font-size: 1.6rem;
+  font-family: "Exo";
+  line-height: 2.2rem;
 }
 .anime-is-life {
-  font-style: italic;
-  font-size: 1.8rem !important;
+  font-size: 2rem !important;
   margin-top: 1.5em;
+  font-family: "Dancing Script", cursive !important;
 }
 .about-section-3-content {
   margin-right: auto;
@@ -63,6 +69,8 @@
 .about-section-3-content > p {
   max-width: 20em;
   font-size: 2rem;
+  font-family: "Exo";
+  line-height: 2.2rem;
 }
 .socials {
   display: flex;
@@ -86,7 +94,18 @@
     background-image: url("../assets/cute-mobile.png");
   }
   .about-section-1-content {
+    margin-right: 2em;
+    margin-left: 2em;
     text-shadow: var(--quote-shadow);
+  }
+  .about-section-1-content > h1 {
+    font-size: 3rem;
+  }
+  .about-section-2-content > h1 {
+    font-size: 3rem;
+  }
+  .about-section-1-content > p {
+    max-width: 12em;
   }
   .about-section-2-content {
     margin-right: 2em;

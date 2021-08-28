@@ -15,6 +15,8 @@
   gap: 2em;
 }
 .feedback-content > h2 {
+  margin-top: 3em;
+  font-family: "Exo";
   font-size: 2rem;
   max-width: 30em;
   text-align: center;
@@ -31,6 +33,7 @@
 }
 .name,
 .feedback {
+  font-family: "Exo";
   padding: 0.7em 1em;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -41,11 +44,16 @@
   border-radius: 10px;
   resize: none;
 }
+.name {
+  width: 15em;
+  height: 1em;
+}
 .feedback {
   width: 20em;
   height: 10em;
 }
 .send-feedback {
+  font-family: "Exo";
   padding: 0.7em 1em;
   font-size: 1.4rem;
   outline: none;
@@ -68,7 +76,11 @@
     max-width: 10em;
   }
   .feedback {
-    width: 15em;
+    width: 13em;
     height: 7em;
+  }
+  .name {
+    width: 10em;
+    height: 1em;
   }
 }
