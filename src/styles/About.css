@@ -1,0 +1,108 @@
+:root {
+  --quote-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px -2px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-container {
+  min-height: 100vh;
+  position: relative;
+}
+.about-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.about-container-mobile-background {
+  display: none;
+}
+.about-section-1 {
+  min-height: 100vh;
+  background-image: url("../assets/itachi.png");
+}
+.about-section-2 {
+  min-height: 100vh;
+  background-image: url("../assets/scary.png");
+}
+.about-section-3 {
+  min-height: 100vh;
+  background-image: url("../assets/cute.png");
+}
+.about-section-1-content {
+  margin-right: auto;
+  margin-left: 3em;
+}
+.about-section-1-content > h1 {
+  font-size: 4rem;
+}
+.about-section-1-content > p {
+  max-width: 20em;
+  font-size: 1.6rem;
+}
+.about-section-2-content {
+  margin-left: auto;
+  margin-right: 6em;
+}
+.about-section-2-content > h1 {
+  font-size: 4rem;
+}
+.about-section-2-content > p {
+  max-width: 20em;
+  font-size: 1.6rem;
+}
+.anime-is-life {
+  font-style: italic;
+  font-size: 1.8rem !important;
+  margin-top: 1.5em;
+}
+.about-section-3-content {
+  margin-right: auto;
+  margin-left: 3em;
+}
+.about-section-3-content > p {
+  max-width: 20em;
+  font-size: 2rem;
+}
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+}
+.self-plug {
+  max-width: 22em !important;
+  font-size: 1.4rem !important;
+}
+
+@media screen and (max-width: 700px) {
+  .about-section-1 {
+    background-image: url("../assets/itachi-mobile.png");
+  }
+  .about-section-2 {
+    background-image: url("../assets/scary-mobile.png");
+  }
+  .about-section-3 {
+    background-image: url("../assets/cute-mobile.png");
+  }
+  .about-section-1-content {
+    text-shadow: var(--quote-shadow);
+  }
+  .about-section-2-content {
+    margin-right: 2em;
+    margin-left: 2em;
+    text-align: right;
+    text-shadow: var(--quote-shadow);
+  }
+  .about-section-3-content {
+    margin-right: 2em;
+    margin-left: 2em;
+    text-shadow: var(--quote-shadow);
+  }
+  .about-container-mobile-background {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.501);
+  }
+}
