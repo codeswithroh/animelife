@@ -1,11 +1,18 @@
+import React, { useEffect } from "react";
 import "./App.css";
 import Hero from "../src/components/Hero";
 import About from "./components/About";
 import AnimatedCursor from "react-animated-cursor";
 import Feedback from "./components/Feedback";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ReactGa from "react-ga";
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize("G-Y61P2D0FFN");
+    // to report page view
+    ReactGa.pageview(window.location.pathname + window.location.search);
+  }, [input]);
   return (
     <div className="App">
       <AnimatedCursor
