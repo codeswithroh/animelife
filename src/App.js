@@ -18,7 +18,7 @@ function App() {
       />
       <Router>
         <Switch>
-          <Route path="/" exact component={Hero} />
+          <Route path="/animelife" exact component={Hero} />
           <Route path="/about" component={About} />
           <Route path="/feedback" component={Feedback} />
         </Switch>
