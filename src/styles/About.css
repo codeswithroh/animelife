@@ -19,15 +19,15 @@
 }
 .about-section-1 {
   min-height: 100vh;
-  background-image: url("../assets/itachi.png");
+  background-image: url("../assets/itachi.jpg");
 }
 .about-section-2 {
   min-height: 100vh;
-  background-image: url("../assets/scary.png");
+  background-image: url("../assets/scary.jpg");
 }
 .about-section-3 {
   min-height: 100vh;
-  background-image: url("../assets/cute.png");
+  background-image: url("../assets/cute.jpg");
 }
 .about-section-1-content {
   margin-right: auto;
@@ -85,13 +85,13 @@
 
 @media screen and (max-width: 700px) {
   .about-section-1 {
-    background-image: url("../assets/itachi-mobile.png");
+    background-image: url("../assets/itachi-mobile.jpg");
   }
   .about-section-2 {
-    background-image: url("../assets/scary-mobile.png");
+    background-image: url("../assets/scary-mobile.jpg");
   }
   .about-section-3 {
-    background-image: url("../assets/cute-mobile.png");
+    background-image: url("../assets/cute-mobile.jpg");
   }
   .about-section-1-content {
     margin-right: 2em;

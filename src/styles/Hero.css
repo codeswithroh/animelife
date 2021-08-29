@@ -20,7 +20,7 @@
 .hero {
   min-height: 100vh;
   /* background-image: url("../assets/hero-background.svg"); */
-  background-image: url("../assets/hero-img.png");
+  background-image: url("../assets/hero-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,7 +79,7 @@
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-image: url("../assets/card-img.png");
+  background-image: url("../assets/card-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
