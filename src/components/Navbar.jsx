@@ -46,13 +46,13 @@ export default function Navbar() {
         {animation ? (
           <div className="mobile-nav-items">
             <Link to="/" className="common-style">
-              <p className="mobile-nav-items-1">home</p>
+              <p className="mobile-nav-items-1 item-1">home</p>
             </Link>
             <Link to="/about" className="common-style">
-              <p className="mobile-nav-items-1">about</p>
+              <p className="mobile-nav-items-1 item-2">about</p>
             </Link>
             <Link to="/feedback" className="common-style">
-              <p className="mobile-nav-items-1">feedback</p>
+              <p className="mobile-nav-items-1 item-3">feedback</p>
             </Link>
           </div>
         ) : (
