@@ -23,16 +23,12 @@ export default function Feedback() {
         feedback: feedback,
       })
       .then((res) => {
-        if (res.data === "Feedback posted successfully") {
-          setname("");
-          setfeedback("");
-          alert("Thanks a lot for the feedback");
-        }
-      })
-      .catch((err) => {
         setname("");
         setfeedback("");
         alert("Thanks a lot for the feedback");
+      })
+      .catch((err) => {
+        alert("We are facing some difficulty, please come back later");
       });
   };
   return (
