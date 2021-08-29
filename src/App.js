@@ -9,10 +9,10 @@ import ReactGa from "react-ga";
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize("G-Y61P2D0FFN");
+    ReactGa.initialize("UA-206154388-1");
     // to report page view
     ReactGa.pageview(window.location.pathname + window.location.search);
-  }, [input]);
+  }, []);
   return (
     <div className="App">
       <AnimatedCursor
