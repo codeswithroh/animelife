@@ -15,7 +15,7 @@ export default function About() {
     Aos.refresh();
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <>

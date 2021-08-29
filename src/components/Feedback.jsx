@@ -12,7 +12,7 @@ export default function Feedback() {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 3000);
   }, []);
 
   const submitFeedback = (e) => {
