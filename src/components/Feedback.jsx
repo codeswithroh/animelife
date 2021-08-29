@@ -17,6 +17,7 @@ export default function Feedback() {
 
   const submitFeedback = (e) => {
     e.preventDefault();
+    alert("Thanks a lot for the feedback");
     axios
       .post("https://animelife-backend.herokuapp.com/animelife/feedback/add", {
         name: name,
@@ -25,7 +26,6 @@ export default function Feedback() {
       .then((res) => {
         setname("");
         setfeedback("");
-        alert("Thanks a lot for the feedback");
       })
       .catch((err) => {
         alert("We are facing some difficulty, please come back later");
