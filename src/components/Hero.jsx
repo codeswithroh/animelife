@@ -34,6 +34,19 @@ export default function Hero() {
     []
   );
 
+  const handleNewQuote = (e) => {
+    e.preventDefault();
+    axios
+      .get("https://animechan.vercel.app/api/quotes")
+      .then((res) => {
+        setLoading(true);
+        handleData(res.data);
+      })
+      .catch((err) => {
+        console.log("Error= " + err);
+      });
+  };
+
   const handleData = (res) => {
     for (let i = 0; i < 10; i++) {
       temp_quote.push(res[i].quote);
@@ -54,6 +67,13 @@ export default function Hero() {
             <div className="search-box">
               <h1>finding quotes made easier</h1>
               <p>enjoy the quotes of your favorite characters</p>
+              <button
+                type="button"
+                className="new-quote-button"
+                onClick={(e) => handleNewQuote(e)}
+              >
+                get new quotes
+              </button>
             </div>
           </div>
           <div>
