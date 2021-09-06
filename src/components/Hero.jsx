@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Hero.css";
+import "../styles/SearchQuotes.css";
 import axios from "axios";
 import { Loader } from "./Loader";
 import Navbar from "./Navbar";
+import Select from "react-select";
 
 export default function Hero() {
+  const [animes, setanimes] = useState([]);
+  const [search, setsearch] = useState("");
   const [loading, setLoading] = useState(false);
   const [quote, setQuote] = useState([]);
   const [anime, setAnime] = useState([]);
@@ -28,6 +32,15 @@ export default function Hero() {
         })
         .catch((err) => {
           console.log("Error= " + err);
+        });
+
+      axios
+        .get("https://animechan.vercel.app/api/available/anime")
+        .then((res) => {
+          setanimes(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
         });
     },
     // eslint-disable-next-line
@@ -58,6 +71,31 @@ export default function Hero() {
     setCharacter(temp_character);
   };
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+    axios
+      .get(`https://animechan.vercel.app/api/quotes/anime?title=${search}`)
+      .then((res) => {
+        for (let i = 0; i < res.data.length; i++) {
+          temp_quote.push(res.data[i].quote);
+          temp_anime.push(res.data[i].anime);
+          temp_character.push(res.data[i].character);
+        }
+        setQuote(temp_quote);
+        setAnime(temp_anime);
+        setCharacter(temp_character);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const options = [];
+  animes.map((anime) => {
+    let data = { value: anime, label: anime };
+    return options.push(data);
+  });
+
   return (
     <>
       {loading ? (
@@ -65,6 +103,16 @@ export default function Hero() {
           <div className="hero">
             <Navbar />
             <div className="search-box">
+              <div className="search-content">
+                <Select
+                  className="anime-options"
+                  options={options}
+                  onChange={(e) => setsearch(e.value)}
+                />
+                <div onClick={(e) => handleSearch(e)} className="search-icon">
+                  <i style={{ color: "white" }} className="fas fa-search"></i>
+                </div>
+              </div>
               <h1>finding quotes made easier</h1>
               <p>enjoy the quotes of your favorite characters</p>
               <button

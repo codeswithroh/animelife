@@ -38,9 +38,9 @@ export default function Navbar() {
           className="mobile-nav-content"
         >
           {animation ? (
-            <i className="fas fa-times"></i>
+            <i className="fas fa-times closing"></i>
           ) : (
-            <i className="fas fa-bars"></i>
+            <i className="fas fa-bars opening"></i>
           )}
         </div>
         {animation ? (
