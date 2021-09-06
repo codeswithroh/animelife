@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Loader } from "./Loader";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   const [loader, setLoader] = useState(true);
@@ -23,6 +24,13 @@ export default function About() {
         <Loader />
       ) : (
         <div className="about-container">
+          <Helmet>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3657933510724518"
+              crossorigin="anonymous"
+            ></script>
+          </Helmet>
           <Navbar />
           <div className="about-container-mobile-background"></div>
           <div className="about-section about-section-1">
