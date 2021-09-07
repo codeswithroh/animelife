@@ -39,4 +39,11 @@
   .search-icon > i {
     font-size: 1.4rem;
   }
+  .search-content {
+    position: absolute;
+    top: 6em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }
