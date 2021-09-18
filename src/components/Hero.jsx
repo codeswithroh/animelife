@@ -50,6 +50,10 @@ export default function Hero() {
 
   const handleNewQuote = (e) => {
     e.preventDefault();
+    window.scrollTo({
+      top: 400,
+      behavior: "smooth",
+    });
     axios
       .get("https://animechan.vercel.app/api/quotes")
       .then((res) => {
@@ -74,6 +78,10 @@ export default function Hero() {
 
   const handleSearch = (e) => {
     e.preventDefault();
+    window.scrollTo({
+      top: 600,
+      behavior: "smooth",
+    });
     axios
       .get(`https://animechan.vercel.app/api/quotes/anime?title=${search}`)
       .then((res) => {
