@@ -5,7 +5,6 @@ import axios from "axios";
 import { Loader } from "./Loader";
 import Navbar from "./Navbar";
 import Select from "react-select";
-import { Helmet } from "react-helmet";
 
 export default function Hero() {
   const [animes, setanimes] = useState([]);
@@ -109,13 +108,6 @@ export default function Hero() {
     <>
       {loading ? (
         <div>
-          <Helmet>
-            <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3657933510724518"
-              crossorigin="anonymous"
-            ></script>
-          </Helmet>
           <div className="hero">
             <Navbar />
             <div className="search-box">

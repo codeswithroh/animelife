@@ -3,7 +3,6 @@ import "../styles/Feedback.css";
 import axios from "axios";
 import Navbar from "./Navbar";
 import { Loader1 } from "./Loader";
-import { Helmet } from "react-helmet";
 
 export default function Feedback() {
   const [name, setname] = useState("");
@@ -38,13 +37,6 @@ export default function Feedback() {
         <Loader1 />
       ) : (
         <div className="feedback-container">
-          <Helmet>
-            <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3657933510724518"
-              crossorigin="anonymous"
-            ></script>
-          </Helmet>
           <Navbar />
           <form
             onSubmit={(e) => submitFeedback(e)}
