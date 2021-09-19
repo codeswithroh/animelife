@@ -107,6 +107,14 @@ export default function Hero() {
     return options.push(data);
   });
 
+  const niceScroll = (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       {loading ? (
@@ -138,6 +146,12 @@ export default function Hero() {
           <div>
             {/* ten quotes */}
             <div className="tenquotes">
+              {/* icon to scroll to top */}
+              <div onClick={(e) => niceScroll(e)} className="scroll-ease">
+                <div className="scroll-icon-background">
+                  <i className="fas fa-arrow-up"></i>
+                </div>
+              </div>
               <div className="quote-container">
                 {quote.map((data, index) => {
                   if (index % 2 === 0) {
