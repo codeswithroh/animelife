@@ -1,8 +1,11 @@
+// todo: work on the custom scroll bar
+
 import React, { useEffect, useState } from "react";
 import "../styles/Hero.css";
 import "../styles/SearchQuotes.css";
 import axios from "axios";
 import { Loader } from "./Loader";
+
 import Navbar from "./Navbar";
 import Select from "react-select";
 
@@ -108,7 +111,7 @@ export default function Hero() {
     <>
       {loading ? (
         <div>
-          <div className="hero">
+          <div className="hero" id="hero">
             <Navbar />
             <div className="search-box">
               <div className="search-content">

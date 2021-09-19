@@ -16,3 +16,7 @@
   background-color: #5006d5;
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
