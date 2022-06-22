@@ -1,5 +1,5 @@
 <h1 style="font-size: 2.5rem"> <img style="width:2em;height:2em" src="./public/apple-touch-icon.png" /><a href="https://animelife.live/">AnimeLife</a></h1>
-<p style="font-size:1.2rem"> A simple site made for content-creators and anime lovers to read all the quotes made by their favorite characters and really understand the true essene of anime </p>
+<p style="font-size:1.2rem"> A simple site made for content-creators and anime lovers to read all the quotes made by their favourite characters and really understand the true essence of anime </p>
 <img src="./animelife.png" alt="" />
 <h3 style="font-size:2.2rem">Features</h3>
 <ul style="font-size:1.1rem">
